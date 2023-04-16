@@ -8,7 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "dark": '#1d1d1d'
+        "dashboard": '#1D1042',
+        "dashboard-active": '#45269C',
+        "slider-gray": '#EBEBEB',
+        "slider-orange": '#FF5737',
+        "primary": '#FBFCFB',
+        "slider-green": '#8BC488',
+        "": '#F3F5F7'
       },
     },
     screens: {

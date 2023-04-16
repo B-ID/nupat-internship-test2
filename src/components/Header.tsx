@@ -1,9 +1,10 @@
 import React from "react";
 import DarkModeSwitch from "./DarkModeSwitch";
 
-type Props = {};
+type Props = {
+};
 
-export default function Header({}: Props) {
+export default function Header(props: Props) {
   return (
     <div className="bg-stone-300 ">
       Header
@@ -13,3 +14,5 @@ export default function Header({}: Props) {
     </div>
   );
 }
+
+
