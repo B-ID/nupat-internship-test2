@@ -9,7 +9,7 @@ export default function DarkModeSwitch({}: Props) {
     const currentTheme = theme === "system" ? systemTheme : theme
 
   return (
-    <div className='flex gap-2 px-2 rounded bg-fuchsia-400'>
+    <div className='flex gap-2 px-2 bg-gradient-radial'>
         <button onClick={() => setTheme("light")}>Light</button>
         <button onClick={() => setTheme("dark")
         } 

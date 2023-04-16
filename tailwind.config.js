@@ -7,10 +7,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "dark": '#1d1d1d'
       },
     },
     screens: {
@@ -29,8 +27,11 @@ module.exports = {
       xl: "1280px",
       // => @media (min-width: 1280px) { ... }
 
-      "2xl": "1536px",
-      // => @media (min-width: 1536px) { ... }
+      "2xl": "1440px",
+      // => @media (min-width: 1440px) { ... }
+
+      "3xl": "1920px",
+      // => @media (min-width: 1920px) { ... }
     },
   },
   plugins: [],

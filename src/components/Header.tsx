@@ -5,9 +5,11 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <div className="bg-stone-300 dark:bg-stone-700">
+    <div className="bg-stone-300 ">
       Header
-      {/* <DarkModeSwitch /> */}
+      <div className="text-center bg-dark">
+      <DarkModeSwitch />
+      </div>
     </div>
   );
 }
