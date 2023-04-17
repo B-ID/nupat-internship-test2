@@ -14,7 +14,8 @@ module.exports = {
         "slider-orange": '#FF5737',
         "primary": '#FBFCFB',
         "slider-green": '#8BC488',
-        "": '#F3F5F7'
+        "dull-white": "#FAF9FA",
+        "secondary": '#F3F5F7',
       },
     },
     screens: {

@@ -15,3 +15,11 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+.change-my-color {
+  fill: white
+}
+
+.filter-green{
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}

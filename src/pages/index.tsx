@@ -1,38 +1,31 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import Sidebar from "@/components/Sidebar";
+import Header from "@/components/Header";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
-type Props = {
-  data: number[]
-}
+type Props = {};
 
 export default function Home(props: Props) {
-  const {data} = props
-
   return (
-    <main className="">
-      {JSON.stringify(data, null, 2)}
-      <div className='relative rounded aspect-video'>
-        <Image 
-        className='object-cover'
-        alt='image'
-        src="https://images.unsplash.com/photo-1505771215590-c5fa0aec29b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsdXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
-        quality={100}
-        fill
-        />
+    <main className="flex-1 px-16 pt-16 pb-20 bg-dull-white">
+      <div className="grid grid-cols-1 gap-10 laptop:grid-cols-2 desktop:grid-cols-3 ">
+        {/* Grid 1 */}
+        <div className='border border-purple-500'>
+         grid1 
+        </div>
+
+        {/* Grid 2 */}
+        <div className="border border-orange-500">
+          grid2
+
+        </div>
+        {/* grid-3 */}
+        <div className="border border-pink-500">
+          grid-3
+        </div>
       </div>
     </main>
-  )
-}
-
-export async function getServerSideProps() {
-  // const {events_categories} = await import("../data/data.json")
-  const events_categories = [1,2333, 4, 5, 6, 7]
-
-  return {
-    props: {
-      data: events_categories
-    }
-  }
+  );
 }
