@@ -6,15 +6,19 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'inter': ["Inter", 'sans-serif']
+    },
     extend: {
       colors: {
         "dashboard": '#1D1042',
         "dashboard-active": '#45269C',
         "slider-gray": '#EBEBEB',
+        "neutral": "#B8B9BD",
         "slider-orange": '#FF5737',
         "primary": '#FBFCFB',
+        "dull-white": "#FBFAFB",
         "slider-green": '#8BC488',
-        "dull-white": "#FAF9FA",
         "secondary": '#F3F5F7',
       },
     },
@@ -41,6 +45,8 @@ module.exports = {
       // => @media (min-width: 1920px) { ... }
     },
   },
-  plugins: [],
+  plugins: [
+require('tailwind-scrollbar-hide')
+  ],
   darkMode: "class",
 };
