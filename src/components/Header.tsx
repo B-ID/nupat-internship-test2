@@ -14,7 +14,7 @@ type Props = {};
 
 export default function Header(props: Props) {
   return (
-    <header className="sticky top-0 z-30 px-4 pt-4 pb-6 desktop:px-16 desktop:pt-10 backdrop-blur">
+    <header className="sticky top-0 z-30 px-4 pt-4 pb-6 desktop:px-16 desktop:pt-10 backdrop-blur-xl ">
       <div className="">
         {/* Header Campaign */}
         <div className="flex flex-col gap-4 tablet:items-center tablet:justify-between tablet:flex-row mb-14">

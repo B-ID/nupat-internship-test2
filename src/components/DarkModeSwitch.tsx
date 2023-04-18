@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { Switch } from "@headlessui/react";
 import {MdSunny} from 'react-icons/md'
@@ -12,11 +12,13 @@ export default function DarkModeSwitch({}: Props) {
 
   const currentTheme = theme === "system" ? systemTheme : theme;
 
-  if (enabled) {
-    setTheme('dark')
-  } else {
-    setTheme('light')
-  }
+  useEffect(() => {
+    if (enabled) {
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
+  }, [theme])
 
   return (
     <div className="flex gap-2 mt-4">

@@ -3,6 +3,7 @@ import { AiOutlineMore, BsListCheck, FiLink2, TbMessageCircle } from "@/data/ico
 import Image from "next/image";
 import cardImg  from '../assets/images/profileStack.png'
 import { stringify } from "querystring";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 type Props = {
   title: string
@@ -12,9 +13,7 @@ type Props = {
 
 export default function TaskCard({sliderColor, title, progress}: Props) {
   const progressBar = sliderColor + " " + progress
-
-  console.log(progressBar, sliderColor)
-
+  
   return (
     <div className="">
       {/* Task header */}
