@@ -27,7 +27,7 @@ export default function Sidebar({}: Props) {
             <Link
               key={i}
               href={"/"}
-              className="flex transition items-center gap-2.5 rounded-lg hover:bg-dashboard-active/50 p-2"
+              className="flex transition items-center gap-2.5 rounded hover:bg-dashboard-active/50 p-2"
             >
               <item.Icon size={22} />
               <p>{item.title}</p>
@@ -37,16 +37,16 @@ export default function Sidebar({}: Props) {
         <hr className="my-4 border-t border-[#8E87A0] rounded-fll" />
         <div className="mb-8">
           <Link
-            className="flex hover:bg-dashboard-active/50 items-center gap-2.5 p-2"
-            href={"/test"}
+            className="flex rounded hover:bg-dashboard-active/50 items-center gap-2.5 p-2"
+            href={"/"}
           >
             <BsLightningCharge size={22} />
             <p>Profile</p>
           </Link>
           <Link
-            className="flex hover:bg-dashboard-active/50 items-center gap-2.5 p-2"
-            href={""}
-          >
+            className="flex rounded hover:bg-dashboard-active/50 items-center gap-2.5 p-2"
+            href={"/"}
+          > 
             <FiUsers size={22} />
             <p>Logout</p>
           </Link>
