@@ -15,7 +15,9 @@ type Props = {};
 
 export default function Home(props: Props) {
   return (
-    <main className=" px-4 flex-1 max-w-[1920px] xl:mx-auto tablet:px-6 pt-6 desktop:px-16 desktop:pt-16 laptop:px-8 laptop:pt-8 pb-20 bg-dull-white dark:bg-[#121212]">
+    <main className="bg-dull-white dark:bg-[#121212]">
+
+    <div className=" px-4 flex-1 max-w-[1920px] xl:mx-auto tablet:px-6 pt-6 desktop:px-16 desktop:pt-16 laptop:px-8 laptop:pt-8 pb-20 bg-dull-white dark:bg-[#121212]">
       <div className="grid grid-cols-1 gap-10 laptop:grid-cols-2 desktop:grid-cols-3 ">
         {/* Grid 1 */}
         <div className="xl:w-[266.67px] 2xl:w-[320px] 3xl:w-[480px]">
@@ -57,12 +59,13 @@ export default function Home(props: Props) {
             progress='w-full'
             sliderColor="bg-slider-green"
             imgSrc={card2.src}
-          />
+            />
           <div className="mt-4">
             <AddTask />
           </div>
         </div>
       </div>
-    </main>
+    </div>
+            </main>
   );
 }
