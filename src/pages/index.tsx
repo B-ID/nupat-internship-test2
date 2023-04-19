@@ -33,7 +33,7 @@ export default function Home(props: Props) {
         </div>
 
         {/* Grid 2 */}
-        <div className="xl:w-[266.67px] 2xl:w-[320px] 3xl:w-[480px]">
+        <div className=" xl:w-[266.67px] 2xl:w-[320px] 3xl:w-[480px]">
           <CampaignStatus order={2} status="In progress" />
           <TaskDetail
             sliderColor="bg-slider-orange"
