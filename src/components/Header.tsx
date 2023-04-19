@@ -9,10 +9,13 @@ import {
   BiPlus,
   RxDashboard,
 } from "@/data/icons";
+import { useMenu } from "@/contexts/MenuContext";
 
 type Props = {};
 
 export default function Header(props: Props) {
+  const { mobileMenu, openMenu, closeMenu } = useMenu();
+
   return (
     <header className="sticky top-0 z-30 px-4 pt-4 pb-6 desktop:px-16 desktop:pt-10 backdrop-blur-xl ">
       <div className="">
@@ -27,6 +30,23 @@ export default function Header(props: Props) {
             </p>
           </div>
 
+          {/* Menu Button */}
+          <div className="desktop:hidden">
+
+          <button
+            onClick={openMenu}
+            className="p-2 text-white bg-black rounded-lg"
+            >
+            open menu
+          </button>
+          <button
+            onClick={closeMenu}
+            className="p-2 text-white bg-red-500 rounded-lg"
+            >
+            close menu
+          </button>
+            </div>
+
           <button className="px-4 py-2 tablet:px-6 tablet:py-3 rounded desktop:px-[28.5px] desktop:py-3 desktop:rounded-lg bg-black active:opacity-90 dark:bg-white transition active:scale-95">
             <p className="text-sm font-medium text-white dark:text-black">
               ADD MEMBERS
@@ -40,19 +60,16 @@ export default function Header(props: Props) {
         <div className="flex items-center justify-between px-4">
           {/* Options left */}
           <div className="flex items-center gap-3 ">
-            <div
-
-              className="object-cover w-[80px] h-[32px] relative"
-            >
-            <Image
-              // className="w-[80px] h-[32px] object-cover"
-              className="object-cover "
-              alt="profileStack"
-              src={profileStack}
-              fill
-              unoptimized
+            <div className="object-cover w-[80px] h-[32px] relative">
+              <Image
+                // className="w-[80px] h-[32px] object-cover"
+                className="object-cover "
+                alt="profileStack"
+                src={profileStack}
+                fill
+                unoptimized
               />
-              </div>
+            </div>
 
             <p className="text-sm text-[#B8B9BD] hidden tablet:block ">
               8 members

@@ -3,12 +3,17 @@ import { BsLightningCharge, FiUsers, IoMdAdd } from "@/data/icons";
 import Link from "next/link";
 import { IMenuData } from "@/interfaces/interfaces";
 import DarkModeSwitch from "./DarkModeSwitch";
+import { useMenu } from "@/contexts/MenuContext";
 
 type Props = {};
 
 export default function Sidebar({}: Props) {
+
+  const {mobileMenu, openMenu, closeMenu} = useMenu()
+  
   return (
-    <div className=" text-white hidden desktop:flex h-screen scrollbar-hide overflow-y-scroll flex-col justify-between  transition duration-300 px-[32px] py-[38px]  w-[272px] bg-dashboard dark:border-r border-gray-500/50 dark:bg-black">
+    <div className={` text-white ${mobileMenu ? 'translate-x-0' : '-translate-x-full'} absolute z-50 desktop:relative desktop:translate-x-0 h-screen scrollbar-hide overflow-y-scroll flex-col justify-between  transition duration-300 px-[32px] py-[38px]  w-[272px] bg-dashboard dark:border-r border-gray-500/50 dark:bg-black`}>
+      
       <div className="">
         {/* Sidebar greeting*/}
         <button className="px-[25px] mb-[40.5px] py-[14.5px] bg-dashboard-active rounded-lg">
