@@ -12,7 +12,8 @@ export default function Sidebar({}: Props) {
   const {mobileMenu, openMenu, closeMenu} = useMenu()
   
   return (
-    <div className={` text-white ${mobileMenu ? 'translate-x-0' : '-translate-x-full'} absolute z-50 desktop:relative desktop:translate-x-0 h-screen scrollbar-hide overflow-y-scroll flex-col justify-between  transition duration-300 px-[32px] py-[38px]  w-[272px] bg-dashboard dark:border-r border-gray-500/50 dark:bg-black`}>
+    <div className={`flex flex-col justify-between text-white ${mobileMenu ? 'translate-x-0' : '-translate-x-full'} absolute z-50 desktop:relative desktop:translate-x-0 h-screen scrollbar-hide overflow-y-scroll   transition duration-300 px-[28px] py-[15px] desktop:px-[32px] desktop:py-[38px]  w-[272px] bg-dashboard dark:border-r border-gray-500/50 dark:bg-black`}>
+
       
       <div className="">
         {/* Sidebar greeting*/}
@@ -27,7 +28,7 @@ export default function Sidebar({}: Props) {
         </button>
 
         {/* Menu */}
-        <nav className="space-y-5">
+        <nav className="space-y-3 desktop:space-y-5">
           {menuData.map((item: IMenuData, i) => (
             <Link
               key={i}
@@ -40,7 +41,7 @@ export default function Sidebar({}: Props) {
           ))}
         </nav>
         <hr className="my-4 border-t border-[#8E87A0] rounded-fll" />
-        <div className="mb-8">
+        <div className="mb-4 desktop:mb-8">
           <Link
             className="flex rounded hover:bg-dashboard-active/50 items-center gap-2.5 p-2"
             href={"/"}
