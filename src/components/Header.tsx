@@ -3,18 +3,16 @@ import Image from "next/image";
 import profileStack from "../assets/images/profile-stack2.png";
 import {
   FiUsers,
-  IoMdAdd,
   AiOutlineUnorderedList,
   BsLightningCharge,
   BiPlus,
   RxDashboard,
 } from "@/data/icons";
-import { useMenu } from "@/contexts/MenuContext";
+import MenuButton from "./MenuButton";
 
 type Props = {};
 
 export default function Header(props: Props) {
-  const { mobileMenu, openMenu, closeMenu } = useMenu();
 
   return (
     <header className="sticky top-0 z-30 px-4 pt-4 pb-6 desktop:px-16 desktop:pt-10 backdrop-blur-xl ">
@@ -31,27 +29,14 @@ export default function Header(props: Props) {
           </div>
 
           {/* Menu Button */}
-          <div className="desktop:hidden">
-
-          <button
-            onClick={openMenu}
-            className="p-2 text-white bg-black rounded-lg"
-            >
-            open menu
-          </button>
-          <button
-            onClick={closeMenu}
-            className="p-2 text-white bg-red-500 rounded-lg"
-            >
-            close menu
-          </button>
-            </div>
-
-          <button className="px-4 py-2 tablet:px-6 tablet:py-3 rounded desktop:px-[28.5px] desktop:py-3 desktop:rounded-lg bg-black active:opacity-90 dark:bg-white transition active:scale-95">
-            <p className="text-sm font-medium text-white dark:text-black">
-              ADD MEMBERS
-            </p>
-          </button>
+          <div className="flex items-center gap-3">
+            <button className="px-4 py-2 flex-1 tablet:px-6 tablet:py-3 rounded desktop:px-[28.5px] desktop:py-3 desktop:rounded-lg bg-black active:opacity-90 dark:bg-white transition active:scale-95">
+              <p className="text-sm font-medium text-white dark:text-black">
+                ADD MEMBERS
+              </p>
+            </button>
+            <MenuButton />
+          </div>
         </div>
 
         {/*  */}

@@ -3,13 +3,11 @@ import { useTheme } from "next-themes";
 import { Switch } from "@headlessui/react";
 import { MdSunny } from "react-icons/md";
 import { BsFillMoonFill } from "react-icons/bs";
-import { useDarkMode } from "@/hooks/useDarkMode";
 
 type Props = {};
 
 export default function DarkModeSwitch({}: Props) {
   const { systemTheme, theme, setTheme } = useTheme();
-  const { isDarkMode, toggleDarkMode } = useDarkMode();
   const [enabled, setEnabled] = useState(false);
 
   const currentTheme = theme === "system" ? systemTheme : theme;
@@ -27,6 +25,7 @@ export default function DarkModeSwitch({}: Props) {
       <div className="flex items-center order-2 gap-3">
         {enabled ? (
           <button onClick={() => setTheme("dark")}>
+            
             <BsFillMoonFill
               className={`${enabled ? "text-dashboard-active" : ""}`}
               size={24}

@@ -4,7 +4,7 @@ import { BsLightningCharge, BsListCheck } from 'react-icons/bs'
 import { FiUserPlus,FiUsers, FiLink2 } from 'react-icons/fi'
 import { TbRadioactive, TbMessageCircle } from 'react-icons/tb'
 import { IoMdAdd } from "react-icons/io";
-import { AiOutlineUnorderedList, AiOutlineMore} from 'react-icons/ai'
+import { AiOutlineUnorderedList, AiOutlineMore, AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import {BiPlus} from 'react-icons/bi'
 import {RxDashboard} from 'react-icons/rx'
 
@@ -22,5 +22,7 @@ export  {
     TbMessageCircle,
     IoMdAdd,
     AiOutlineUnorderedList,
+    AiOutlineClose,
+    AiOutlineMenu,
     AiOutlineMore,
 }
