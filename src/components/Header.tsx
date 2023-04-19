@@ -17,7 +17,7 @@ export default function Header(props: Props) {
   const {mobileMenu} = useMenu()
 
   return (
-    <header className={`sticky top-0 z-30 px-4 pt-4 pb-6 desktop:px-16 desktop:pt-10 ${mobileMenu ? '' : 'backdrop-blur-xl'}`} >
+    <header className={`sticky top-0 z-30 px-4 pt-4 pb-6 desktop:px-16 desktop:pt-10 ${mobileMenu ? 'bg-white dark:bg-[#121212]' : 'backdrop-blur-xl'}`} >
       <div className="">
         {/* Header Campaign */}
         <div className="flex flex-col gap-4 tablet:items-center tablet:justify-between tablet:flex-row mb-14">
