@@ -32,8 +32,8 @@ export default function Header(props: Props) {
 
           {/* Menu Button */}
           <div className="flex items-center gap-3">
-            <button className="px-4 py-2 flex-1 tablet:px-6 tablet:py-3 rounded desktop:px-[28.5px] desktop:py-3 desktop:rounded-lg bg-black active:opacity-90 dark:bg-white transition active:scale-95">
-              <p className="text-sm font-medium text-white dark:text-black">
+            <button className="px-4 py-2 flex-1 hover:bg-dashboard-active dark:hover:bg-dashboard-active dark:text-dull-white dark:hover:text-white  tablet:px-6 tablet:py-3 rounded desktop:px-[28.5px] desktop:py-3 desktop:rounded-lg bg-black active:opacity-90 dark:bg-white transition active:scale-95 group">
+              <p className="text-sm font-medium text-white dark:text-zinc-800 group-hover:text-white">
                 ADD MEMBERS
               </p>
             </button>
