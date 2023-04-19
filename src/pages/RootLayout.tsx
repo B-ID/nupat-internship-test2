@@ -3,6 +3,7 @@ import Sidebar from "@/components/Sidebar";
 import React, { ReactNode } from "react";
 import {Inter} from 'next/font/google'
 import Head from "next/head";
+import Overlay from "@/components/Overlay";
 
 type Props = {
   children: ReactNode;
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: Props) {
       <Sidebar />
         </div>
       <div className="flex flex-col w-screen h-screen overflow-y-scroll scrollbar-hide">
+        <Overlay />
         <Header />
         {children}
       </div>
