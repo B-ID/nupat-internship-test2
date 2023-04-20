@@ -8,7 +8,7 @@ type Props = {};
 
 export default function DarkModeSwitch({}: Props) {
   const { systemTheme, resolvedTheme, theme, setTheme } = useTheme();
-  const [enabled, setEnabled] = useState(false);
+  // const [enabled, setEnabled] = useState(false);
   const [mounted, setMounted] = useState(false)
 
   const currentTheme = theme === "system" ? systemTheme : theme;

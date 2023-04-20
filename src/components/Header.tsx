@@ -33,7 +33,7 @@ export default function Header(props: Props) {
           {/* Menu Button */}
           <div className="flex items-center gap-3">
             <button className="px-4 py-2 flex-1 hover:bg-dashboard-active dark:hover:bg-dashboard-active dark:text-dull-white dark:hover:text-white  tablet:px-6 tablet:py-3 rounded desktop:px-[28.5px] desktop:py-3 desktop:rounded-lg bg-black active:opacity-90 dark:bg-white transition active:scale-95 group">
-              <p className="text-sm font-medium text-white dark:text-zinc-800 group-hover:text-white">
+              <p className="text-sm font-medium text-white whitespace-nowrap dark:text-zinc-800 group-hover:text-white">
                 ADD MEMBERS
               </p>
             </button>
@@ -46,7 +46,7 @@ export default function Header(props: Props) {
         {/* Header Options */}
         <div className="flex items-center justify-between px-4">
           {/* Options left */}
-          <div className="flex items-center gap-3 ">
+          <div className="flex flex-wrap items-center gap-3">
             <div className="object-cover w-[80px] h-[32px] relative">
               <Image
                 // className="w-[80px] h-[32px] object-cover"
@@ -64,7 +64,7 @@ export default function Header(props: Props) {
           </div>
 
           {/* options right */}
-          <ul className="text-[#7D8088] dark:text-[#B8B9BD]  flex items-center gap-[21.38px]">
+          <ul className="text-[#7D8088] whitespace-nowrap dark:text-[#B8B9BD]  flex items-center gap-[21.38px]">
             <li className="flex items-center gap-1 cursor-pointer hover:text-black dark:hover:text-white">
               <FiUsers className="" />
               <p className="hidden laptop:block">Participants View</p>
