@@ -18,9 +18,9 @@ export default function Home(props: Props) {
     <main className="bg-dull-white dark:bg-[#121212] pb-10">
 
     <div className=" px-4 flex-1 max-w-[1920px] xl:mx-auto tablet:px-6 pt-6 desktop:px-16 desktop:pt-16 laptop:px-8 laptop:pt-8 bg-dull-white dark:bg-[#121212]">
-      <div className="grid grid-cols-1 gap-10 laptop:grid-cols-2 desktop:grid-cols-3 ">
+      <div className="grid grid-cols-1 gap-7 laptop:grid-cols-2 desktop:grid-cols-3 ">
         {/* Grid 1 */}
-        <div className="xl:w-[266.67px] 2xl:w-[320px] 3xl:w-[480px]">
+        <div className="min-w-[213px] xl:w-[266.67px] 2xl:w-[320px] 3xl:w-[480px]">
           <CampaignStatus order={3} status="To Do" />
           <TaskDetail
             imgSrc={card3.src}
@@ -33,7 +33,7 @@ export default function Home(props: Props) {
         </div>
 
         {/* Grid 2 */}
-        <div className=" xl:w-[266.67px] 2xl:w-[320px] 3xl:w-[480px]">
+        <div className="min-w-[213px] xl:w-[266.67px] 2xl:w-[320px] 3xl:w-[480px]">
           <CampaignStatus order={2} status="In progress" />
           <TaskDetail
             sliderColor="bg-slider-orange"
@@ -46,7 +46,7 @@ export default function Home(props: Props) {
         </div>
 
         {/* grid-3 */}
-        <div className="xl:w-[266.67px] 2xl:w-[320px] 3xl:w-[480px]">
+        <div className="min-w-[213px] xl:w-[266.67px] 2xl:w-[320px] 3xl:w-[480px]">
           <CampaignStatus order={1} status="Completed" />
           <div className="p-4 mb-4 bg-white dark:bg-[#181818] rounded-lg">
             <TaskCard

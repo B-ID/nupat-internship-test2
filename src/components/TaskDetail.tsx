@@ -16,7 +16,7 @@ export default function TaskDetail({progress, sliderColor, imgSrc}: Props) {
     <div className="p-4 bg-white rounded-md dark:bg-[#181818]">
       <div className="">
         <div className="relative h-[168px] mb-[18px]">
-          <Image className="object-cover" src={imgSrc} alt="card-img" fill unoptimized/>
+          <Image className="object-cover w-full h-auto" src={imgSrc} alt="card-img" fill />
         </div>
       </div>
         <TaskCard title="Highfidelity design" progress={progress} sliderColor={sliderColor} />

@@ -15,7 +15,7 @@ export default function TaskCard({sliderColor, title, progress}: Props) {
   const progressBar = sliderColor + " " + progress
   
   return (
-    <div className="">
+    <div className="w-full">
       {/* Task header */}
       <div>
         <div className="flex items-center justify-between mb-2 ">
