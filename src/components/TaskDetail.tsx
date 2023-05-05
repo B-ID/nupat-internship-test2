@@ -13,7 +13,7 @@ type Props = {
 
 export default function TaskDetail({progress, sliderColor, imgSrc}: Props) {
   return (
-    <div className="p-4 flex flex-col flex-shrink-0 bg-white rounded-md dark:bg-[#181818]">
+    <div className="p-4 bg-white rounded-md dark:bg-[#181818]">
         <div className="relative h-[168px] w-full mb-[18px]">
           <Image className="object-cover" src={imgSrc} alt="card-img" fill />
       </div>
